@@ -5,7 +5,7 @@ SRC = app/hello.c
 all: $(NAME)
 
 $(NAME):
-	gcc -o $(NAME) $(SRC)
+	/bin/sh -c "gcc -o $(NAME) $(SRC)"
 
 clean:
 	rm -f *.o
